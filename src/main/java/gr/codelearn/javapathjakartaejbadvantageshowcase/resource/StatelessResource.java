@@ -11,7 +11,7 @@ import jakarta.ws.rs.Produces;
 @Path("/stateless")
 public class StatelessResource {
 
-    @EJB
+    @EJB(beanName = "ViewCounterStatelessBean")
     ViewCounter viewCounter;
 
     @GET
