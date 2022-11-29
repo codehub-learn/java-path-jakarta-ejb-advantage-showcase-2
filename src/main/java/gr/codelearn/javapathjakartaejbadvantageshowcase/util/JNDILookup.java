@@ -11,7 +11,7 @@ import java.util.Hashtable;
 @Slf4j
 public class JNDILookup {
     private JNDILookup(){}
-    private static Context createInitialContext() throws NamingException {
+    /*private static Context createInitialContext() throws NamingException {
         Hashtable<String,String> jndiProperties = new Hashtable<>();
         jndiProperties.put(Context.URL_PKG_PREFIXES,"org.jboss.ejb.client.naming");
         return new InitialContext(jndiProperties);
@@ -30,5 +30,5 @@ public class JNDILookup {
         } catch (NamingException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 }

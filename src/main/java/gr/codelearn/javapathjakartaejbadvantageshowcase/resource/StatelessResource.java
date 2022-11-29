@@ -29,7 +29,7 @@ public class StatelessResource {
         return "Views incremented!";
     }
 
-    @GET
+   /* @GET
     @Produces("text/plain")
     @Path("/views-context")
     public String getTotalNumberOfViewsContext(){
@@ -38,5 +38,5 @@ public class StatelessResource {
         );
         viewsCounterContext.incrementNumberOfViews();
         return "Total views with context: " + viewsCounterContext.getNumberOfViews();
-    }
+    }*/
 }
